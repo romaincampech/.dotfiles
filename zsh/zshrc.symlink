@@ -1,0 +1,42 @@
+export ZSH="$HOME/.oh-my-zsh"
+
+zstyle ':omz:update' mode reminder
+zstyle ':omz:update' frequency 14
+
+export ENABLE_CORRECTION="true"
+
+export EDITOR="nvim"
+
+export PATH=\
+$PATH:\
+~/.dotfiles/bin:\
+/opt/homebrew/bin:\
+"/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin"
+
+plugins=(
+    git
+    web-search
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+alias dotfiles="cd ~/.dotfiles"
+alias workspace="cd ~/workspace"
+alias tto="cd ~/workspace/tto"
+alias petra="cd ~/workspace/tto/petra"
+alias giza="cd ~/workspace/tto/giza"
+alias olympia="cd ~/workspace/tto/olympia"
+alias pompeii="cd ~/workspace/tto/pompeii"
+alias delphi="cd ~/workspace/tto/delphi"
+alias bb="(cd ~/.dotfiles/homebrew && brew bundle)"
+alias mi="(cd ~/.dotfiles/mas && ./install.sh)"
+alias ip="curl https://ipinfo.io/json"
+alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+eval "$(starship init zsh)"

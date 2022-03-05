@@ -1,0 +1,25 @@
+[user]
+  name = Romain Campech
+  email = romain.campech@gmail.com
+
+[credential]
+  helper = osxkeychain
+
+[core]
+  editor = nvim
+  excludesfile = ~/.gitignore
+
+[init]
+    defaultBranch = main
+
+[help]
+  autocorrect = prompt
+
+[color]
+  ui = auto
+
+[alias]
+  co = checkout
+
+[includeIf "gitdir:~/workspace/tto/**"]
+  path = "~/workspace/tto/.gitconfig-tto"

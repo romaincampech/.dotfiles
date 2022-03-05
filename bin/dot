@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+$HOME/.dotfiles/install.sh
+
+$HOME/.dotfiles/macos/set-defaults.sh
