@@ -3,3 +3,7 @@ success_symbol = "[|>](bold green)"
 
 [nodejs]
 symbol = "⬢ "
+
+[[battery.display]]
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "

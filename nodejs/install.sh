@@ -9,3 +9,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install --lts
 
 npm install --global yarn
+
+npm install -g @nestjs/cli
+
+npm install -g @vue/cli

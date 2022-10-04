@@ -11,7 +11,9 @@ export PATH=\
 $PATH:\
 ~/.dotfiles/bin:\
 /opt/homebrew/bin:\
-"/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin"
+"/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin":\
+$HOME/.cargo/bin:\
+$HOME/.local/share/solana/install/active_release/bin
 
 plugins=(
     git

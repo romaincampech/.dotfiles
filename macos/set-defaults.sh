@@ -40,12 +40,20 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 mkdir -p "$HOME/Documents/screenshots"
 defaults write com.apple.screencapture location -string "$HOME/Documents/screenshots"
 
+# Menu bar
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18 # 24 to hide
+
+defaults write com.apple.controlcenter "NSStatusItem Visible Sound" -bool true
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Sound -int 18
+
 ################
 # Restart apps #
 ################
 
 apps=(
 	Dock
+	SystemUIServer
 )
 
 for app in "${apps[@]}"
