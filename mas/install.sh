@@ -2,6 +2,9 @@
 
 set -e
 
+# Dashlane
+mas install 517914548
+
 # Hotspot
 mas install 771076721
 
