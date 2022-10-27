@@ -25,10 +25,8 @@
   "[graphql]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "eslint.workingDirectories": [
-    { "mode": "auto" }
-  ],
-  
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
   // Git
   "diffEditor.ignoreTrimWhitespace": false,
   "gitlens.hovers.currentLine.over": "line",
@@ -54,9 +52,9 @@
   ],
   "editor.inlineSuggest.enabled": true,
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "yaml": true,
-    "plaintext": false,
+    "plaintext": true,
     "markdown": false
   },
   "explorer.confirmDragAndDrop": false
